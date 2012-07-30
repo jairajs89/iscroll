@@ -2,7 +2,7 @@
  * iScroll v4.2 ~ Copyright (c) 2012 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
  */
-(function(window, doc){
+var iScroll = function(window, doc){
 var m = Math,
 	dummyStyle = doc.createElement('div').style,
 	vendor = (function () {
@@ -1111,7 +1111,5 @@ function prefixStyle (style) {
 
 dummyStyle = null;	// for the sake of it
 
-if (typeof exports !== 'undefined') exports.iScroll = iScroll;
-else window.iScroll = iScroll;
-
-})(window, document);
+return iScroll;
+}(window, document);
