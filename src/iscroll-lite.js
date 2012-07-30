@@ -3,7 +3,7 @@
  * Released under MIT license, http://cubiq.org/license
  */
 
-(function(){
+var iScroll = function(window, document){
 var m = Math,
 	mround = function (r) { return r >> 0; },
 	vendor = (/webkit/i).test(navigator.appVersion) ? 'webkit' :
@@ -591,4 +591,4 @@ iScroll.prototype = {
 if (typeof exports !== 'undefined') exports.iScroll = iScroll;
 else window.iScroll = iScroll;
 
-})();
+}(window, document);
