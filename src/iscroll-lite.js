@@ -588,7 +588,5 @@ iScroll.prototype = {
 	}
 };
 
-if (typeof exports !== 'undefined') exports.iScroll = iScroll;
-else window.iScroll = iScroll;
-
+return iScroll;
 }(window, document);
